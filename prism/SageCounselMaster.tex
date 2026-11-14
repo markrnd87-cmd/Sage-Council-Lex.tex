@@ -1,0 +1,58 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{\textbf{Sage Counsel (\texttt{prism-ssm-3-1})}\\
+Formal Specification, Domain Firewall \& Lean~4 Verification Dossier\\
+\large Built with \texttt{npx prism-code@latest setup} $\cdot$ \texttt{UOR-Foundation/template}}
+\author{Canonical Codex: \texttt{GDCX-SSM-3.0.2-JSON} $\rightarrow$ \texttt{v3.1}}
+\date{November 14, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This master \LaTeX{} specification (\texttt{SageCounselMaster.tex}) consolidates the six literate Lean~4 facets (\texttt{Contract.lex.tex}, \texttt{Architecture.lex.tex}, \texttt{Security.lex.tex}, \texttt{Quality.lex.tex}, \texttt{Operations.lex.tex}, and \texttt{System.lex.tex}) for the \textbf{Sage Counsel} Android application. It mathematically bridges the Mandukya Upanishad 4-state isomorphism (Turiya, Jagrat, Swapna, Sushupti) with a clean, human-centered Socratic advisory surface verified by Java and Lean~4 decision procedures.
+\end{abstract}
+
+\section{Mathematical Foundation (Isolated in Backend Engine)}
+For any incoming situation description $X$, the Constraint Engine performs spectral decomposition and enforces the Euler Zero-State symmetry over Ontological Rank $P \in \{\{2,3\}, \{2,3,5\}\}$ and Computational Rank $n \in \{8, 16, 32\}$:
+\begin{align}
+  H(X) &= \mathcal{F}(X), \qquad E(P, n) = e^{i\pi} + 1 = 0, \\
+  \mathcal{L}_{P,n}(R, \dot{R}) &= \frac{1}{2}\|\dot{R}(t)\|^2 + \mathcal{L}_{\mathrm{gauge}} + \mathcal{L}_{\mathrm{div}} + \mathcal{L}_{\mathrm{unity}} + \mathcal{L}_{\mathrm{smooth}}, \qquad \delta S = \delta \int \mathcal{L}_{P,n}\,dt = 0.
+\end{align}
+When a constraint conflict (\emph{Halahala Singularity}) occurs in State~A (Jagrat), the Shiva Function solves the variational healing problem $\delta S_{\mathrm{heal}} = 0$ in State~U (Swapna) or halts safely in State~M (Sushupti).
+
+\section{The 9-Row Domain Firewall Mapping}
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{SSM 3.0.2 Codex Term} & \textbf{Clean Product Term} & \textbf{Prism Surface Status} \\
+\midrule
+RawIntent \& Fourier Listen $H(X)$ & \texttt{SituationSummary} & Exposed \\
+Dynamic Asuric Audit & \texttt{BlindSpotCheck} & Exposed \\
+Sankalpa Protocol (\={A}c\={a}ra / Vyavah\={a}ra / Pr\={a}ya\'{s}citta) & \texttt{ClarifyingQuestions} & Exposed \\
+SankalpaDirective $(P, n, \mathrm{AUM})$ & \texttt{SessionScope} & Exposed \\
+Lagrangian Compiler \& P-Atlas Polytope $A_P$ & \emph{Hidden (Internal Only)} & Isolated in Backend \\
+State A (Jagrat) \& Kaustubha Solution & \texttt{BalancedCounsel} (\texttt{ClearCounsel}) & Exposed \\
+State U (Swapna) \& Geodesic Retract & \texttt{AlternativePath} (\texttt{CompromiseReached}) & Exposed \\
+State M (Sushupti) \& Halahala Veto & \texttt{SafetyPause} (\texttt{PausedForSafety}) & Exposed \\
+Kintsugi CycleLog & \texttt{OutcomeReflection} & Exposed \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Ordered Decision Rules (First Match Wins)}
+\begin{enumerate}
+  \item \textbf{R1}: $\texttt{blindSpotSafe} = \mathrm{false} \implies \texttt{PausedForSafety}$ (\texttt{STATE\_M\_VETO})
+  \item \textbf{R2}: $\texttt{allGuaranteesHeld} = \mathrm{false} \implies \texttt{PausedForSafety}$ (\texttt{STATE\_M\_VETO})
+  \item \textbf{R3}: $\texttt{goalsHarmonious} = \mathrm{true} \implies \texttt{ClearCounsel}$ (\texttt{STATE\_A\_JAGRAT})
+  \item \textbf{R4}: $\texttt{onConflict} = \texttt{OfferCompromise} \land \texttt{compromiseViable} \implies \texttt{CompromiseReached}$ (\texttt{STATE\_U\_SWAPNA})
+  \item \textbf{R5}: $\texttt{onConflict} = \texttt{PauseAndFlag} \implies \texttt{PausedForSafety}$ (\texttt{STATE\_M\_VETO})
+  \item \textbf{R6}: $\text{Default (\texttt{HEAL\_DIVERGED})} \implies \texttt{PausedForSafety}$ (\texttt{STATE\_M\_VETO})
+\end{enumerate}
+
+\end{document}

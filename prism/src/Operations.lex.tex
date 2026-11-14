@@ -1,0 +1,45 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+
+\title{Sage Counsel (\texttt{prism-ssm-3-1}) --- Facet 5: Kintsugi Operations \& Steward Trust\\
+\small OutcomeReflection (\texttt{CycleLog}) \& 7/9 Supermajority Governance}
+\author{UOR-Foundation / Prism-DevRel $\cdot$ Template: \texttt{uor/template-contract/1}}
+\date{2026-11-14}
+
+\begin{document}
+\maketitle
+
+\section{Kintsugi Evolution Engine \& Steward Trust Protocol}
+This module (\texttt{Operations.lex.tex}) formalizes the operational credit-assignment loop from \texttt{GDCX-SSM-3.0.2-JSON} (\texttt{meta\_protocol\_kintsugi}) and Appendix~D (\emph{The Council of Nine Stewards}), ensuring every \texttt{PausedForSafety} (State~M) event is queued for human Trust Reviewer ratification.
+
+\begin{code}
+import Foundation.Core
+import SageCounsel.Contract
+
+namespace SageCounsel.Operations
+
+inductive KintsugiCreditAction where
+  | ReinforcePathway         -- State A: ClearCounsel
+  | SynthesizeCompromiseCase -- State U: CompromiseReached
+  | EscalateToTrustReviewer  -- State M: PausedForSafety
+  deriving DecidableEq, Repr
+
+def assignKintsugiAction (status : SageCounsel.Contract.ResolutionStatus) : KintsugiCreditAction :=
+  match status with
+  | SageCounsel.Contract.ResolutionStatus.ClearCounsel      => KintsugiCreditAction.ReinforcePathway
+  | SageCounsel.Contract.ResolutionStatus.CompromiseReached => KintsugiCreditAction.SynthesizeCompromiseCase
+  | SageCounsel.Contract.ResolutionStatus.PausedForSafety   => KintsugiCreditAction.EscalateToTrustReviewer
+
+def hasSupermajorityQuorum (approvals : Nat) : Bool :=
+  approvals >= 7
+
+theorem safety_pause_always_escalates (v : SageCounsel.Contract.VerificationVector) :
+    v.blindSpotSafe = false →
+    assignKintsugiAction (SageCounsel.Contract.resolveCounsel v) = KintsugiCreditAction.EscalateToTrustReviewer := by
+  decide
+
+end SageCounsel.Operations
+\end{code}
+
+\end{document}

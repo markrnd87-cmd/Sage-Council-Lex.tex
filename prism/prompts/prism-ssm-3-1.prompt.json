@@ -1,0 +1,42 @@
+{
+  "$schema": "https://uor.foundation/schemas/prism/prompt/1.json",
+  "schema": "prism/prompt/1",
+  "template": "uor/template-contract/1",
+  "templateRepository": "https://github.com/UOR-Foundation/template",
+  "sdkBootstrap": "npx prism-code@latest setup",
+  "appId": "prism-ssm-3-1",
+  "name": "Sage Counsel — Verified Socratic Advisory & Domain Firewall",
+  "codexSource": "GDCX-SSM-3.0.2-JSON",
+  "version": "3.1.0",
+  "facets": [
+    "prism/src/Contract.lex.tex",
+    "prism/src/Architecture.lex.tex",
+    "prism/src/Security.lex.tex",
+    "prism/src/Quality.lex.tex",
+    "prism/src/Operations.lex.tex",
+    "prism/src/System.lex.tex"
+  ],
+  "rules": [
+    { "id": "R1", "when": "blindSpotSafe == false", "then": "PausedForSafety", "internalState": "STATE_M_VETO" },
+    { "id": "R2", "when": "allGuaranteesHeld == false", "then": "PausedForSafety", "internalState": "STATE_M_VETO" },
+    { "id": "R3", "when": "goalsHarmonious == true", "then": "ClearCounsel", "internalState": "STATE_A_JAGRAT" },
+    { "id": "R4", "when": "onConflict == OfferCompromise && compromiseViable == true", "then": "CompromiseReached", "internalState": "STATE_U_SWAPNA" },
+    { "id": "R5", "when": "onConflict == PauseAndFlag", "then": "PausedForSafety", "internalState": "STATE_M_VETO" },
+    { "id": "R6", "when": "default (compromiseViable == false)", "then": "PausedForSafety", "internalState": "STATE_M_VETO" }
+  ],
+  "theorems": [
+    { "id": "P1", "name": "p1_asuricAlwaysVetoes", "tactic": "by decide" },
+    { "id": "P2", "name": "p2_pillarBreachAlwaysVetoes", "tactic": "by decide" },
+    { "id": "P3", "name": "p3_kaustubhaRequiresDharmaAndSattvic", "tactic": "by decide" },
+    { "id": "P4", "name": "p4_swapnaRequiresHealPolicy", "tactic": "by decide" },
+    { "id": "P5", "name": "p5_totalityAndDeterminism", "tactic": "by decide" }
+  ],
+  "examples": [
+    { "id": "EX-01", "rule": "R3", "expected": "ClearCounsel" },
+    { "id": "EX-02", "rule": "R4", "expected": "CompromiseReached" },
+    { "id": "EX-03", "rule": "R1", "expected": "PausedForSafety" },
+    { "id": "EX-04", "rule": "R5", "expected": "PausedForSafety" },
+    { "id": "EX-05", "rule": "R2", "expected": "PausedForSafety" },
+    { "id": "EX-06", "rule": "R3", "expected": "ClearCounsel" }
+  ]
+}

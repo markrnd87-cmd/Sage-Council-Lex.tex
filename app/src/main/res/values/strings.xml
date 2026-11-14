@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Sage Counsel</string>
+    <string name="app_subtitle">Plain-Language Socratic Advisory · SSM 3.0.2 Domain Firewall</string>
+    <string name="nav_seeker">Seeker</string>
+    <string name="nav_guarantees">Guarantees</string>
+    <string name="nav_firewall">Firewall</string>
+    <string name="nav_governance">Governance</string>
+    <string name="seeker_header_title">Socratic Advisory Workspace</string>
+    <string name="seeker_header_subtitle">Untangle difficult situations through three clarifying questions and impartial, multi-perspective guidance.</string>
+    <string name="section_scenarios">Verified Acceptance Scenarios (Replayable Journeys)</string>
+    <string name="section_situation_summary">1. Situation Summary</string>
+    <string name="situation_placeholder">Describe the dilemma, tension, or decision in everyday language…</string>
+    <string name="section_clarifying_questions">2. Clarifying Questions (Session Scope)</string>
+    <string name="q1_goal_type">Goal Type — Do you need to stabilize an existing situation or create a new path forward?</string>
+    <string name="q2_decision_scale">Decision Scale — Who is affected by this decision?</string>
+    <string name="q3_conflict_handling">Conflict Handling — How should the advisor respond if your goals contradict each other?</string>
+    <string name="action_seek_counsel">Generate Balanced Counsel</string>
+    <string name="action_save_reflection">Save Outcome Reflection</string>
+    <string name="guarantees_header_title">Nine Impartiality Guarantees</string>
+    <string name="guarantees_header_subtitle">Verifiable product guarantees protecting the Seeker and Affected Parties without exposing differential geometry.</string>
+    <string name="firewall_header_title">Domain Firewall &amp; Prism Blueprint</string>
+    <string name="firewall_header_subtitle">Isolating Super Sage Mode 3.0.2 backend physics behind a clean, human-centered product taxonomy.</string>
+    <string name="governance_header_title">Trust Reviewer &amp; Outcome Reflections</string>
+    <string name="governance_header_subtitle">Review edge-case sessions flagged for safety or conflict, and inspect Kintsugi outcome reflections.</string>
+</resources>

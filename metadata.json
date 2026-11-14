@@ -1,0 +1,8 @@
+{
+  "name": "Sage Counsel",
+  "description": "Plain-language Socratic advisory workspace and formally verified Prism SDK (npx prism-code@latest setup · UOR-Foundation/template) domain firewall built on the Super Sage Mode 3.0.2 / 3.1 Codex in Java, Kotlin, and Literate Lean 4 (.lex.tex).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

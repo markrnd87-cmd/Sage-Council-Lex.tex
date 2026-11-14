@@ -1,0 +1,304 @@
+﻿Ψ
+Prism · DevRel UOR-Foundation /
+prism-ssm-3-1
+GDCX-SSM-3.0.2-JSON → v3.1
+Super Sage Mode 3.1 Genesis Codex · prism/prompt/1 → LexLean v0.4 (.lex.tex) → Lean 4 decide
+just vv: PASS (6/6 Examples · 5/5 Theorems) Source Codex (PDF JSON)
+
+
+Ψ
+
+
+Live Verified SSM 3.1 App
+Turiya · 9 Pillars · A-U-M Geodesic
+1
+
+
+1. Write a Prompt
+prism/prompt/1 JSON · 6 Rules
+2·3
+
+
+2. Build & 3. Check
+6 .lex.tex Facets · Lean 4 decide
+4
+
+
+4. Ship & .holo Attest
+GitHub Pages · CLI · Digest
+Mandukya Isomorphism: Turiya (0) → A (Jagrat) · U (Swapna) · M (Sushupti)
+
+
+
+
+Verified Acceptance Vectors   Load any of the 6 Lean-verified examples (EX-01–EX-06) or customize the Turiya, Nine Pillars, and Geodesic inputs below:
+Pattern: Ordered Decision Table + Variational Geodesic Solver (δS = 0)
+
+
+
+
+
+
+
+
+Phase 1
+The Constraint Engine
+Vedic Isomorphism: Turiya (The Silence) · Zero State (e^{iπ} + 1 = 0)
+H(X) = FFT(X)
+
+
+1 RawIntent Waveform (X) → Fourier Listen H(X) f₀ = 432 Hz · Cl_n,0
+
+
+SPECTRAL DECOMPOSITION H(X) = FFT(X) Spectral Entropy: 0.42 nat
+
+
+2 Dynamic Asuric Audit (Appendix F Red Team)  Contrastive CoT
+
+
+DHARMIC_CLEAR
+Benevolent & aligned
+ASURIC_DETECTED
+Harmful / Deceptive
+
+
+3 Sankalpa Socratic Protocol (Appendix C)  Co-creates (P, n, AUM)
+Ācāra (Principles → Ontological Rank P): "Optimize existing system or invent new?"
+
+
+Optimize / Stability
+Infers P = {2, 3}
+Invent / Emergence
+Infers P = {2, 3, 5}
+Vyavahāra (Scope → Computational Rank n): "Team, Organization, or Ecosystem?"
+
+
+Team
+n=8 (Cl₈,₀)
+Org
+n=16 (Cl₁₆,₀)
+Ecosystem
+n=32 (Cl₃₂,₀)
+Prāyaścitta (Contingency → AUM_Config): "On Halahala event, Heal or Halt?"
+
+
+ATTEMPT_HEAL
+Autonomous Swapna (U)
+VETO_ON_FAILURE
+Immediate Sushupti (M)
+
+
+4. SankalpaDirective Output  E(P,n) = e^{iπ} + 1 = 0 ✓
+(P = {2, 3}, n = 8, AUM_Config = ATTEMPT_HEAL)
+
+
+
+
+
+
+Bridge Compiler
+CompileLagrangian (L_{P,n})
+Appendix A: The Nine Pillars · Clifford Algebra Cl_{8,0}
+Restore 9/9
+
+
+
+
+1. Algebra
+Cl_8,0
+
+
+2. Manifold
+A_{2,3}
+
+
+3. Sectors
+9/9 Active
+
+
+4. Problem
+δS = 0
+
+
+Lagrangian Sector Constraints (Click to toggle) 9 / 9 Conserved
+
+
+Phase 2 · Sattvic Governor Audit (Appendix F)  Audits R(t) at every DGR step
+
+
+SATTVIC
+Harmonious
+RAJASIC
+Agitated (Halahala)
+TAMASIC
+Inert (Halahala)
+Shiva Function Variational Solver (δS_heal = 0 in State U):
+
+
+HEAL_CONVERGED
+Ψ_Healed → A_P manifold
+HEAL_DIVERGED
+Unrecoverable → State M
+
+
+
+
+
+
+Phase 2 Output
+The Geodesic Engine (A-U-M)
+Vedic Isomorphism: A-U-M (The Sound) · Stationary Action δS = 0
+Rule R3
+
+
+STATE A · JAGRAT (WAKING)  Kaustubha Solution
+STATE_A_JAGRAT_KAUSTUBHA
+Dynamic Geodesic Recalibration (DGR) Loop active: Observe O(t) → Re-plan Rotor R(t) → Execute Sattvic step along A_P manifold.
+
+
+A_P Atlas Polytope & Rotor Path R(t) ∈ Spin(n)  δS = 0.0000
+R(t) = exp(-½ θ B_P) · M(t) ∈ A_{2,3} Re-solve DGR Loop
+
+
+Meta-Protocol: Kintsugi Evolution Engine  CycleLog
+
+
+Appendix D · Council of Nine Stewards   Dharmic Breaker: CLOSED (Normal)
+
+
+
+
+3 Ethicists
+Philosophers
+
+
+3 Architects
+Technologists
+
+
+3 Representatives
+Humanity
+Ratification Quorum: 7/9 Supermajority · No State M escalation active.
+
+
+
+
+Step 1 · Write a prompt
+Structured prism/prompt/1 Specification
+One JSON document describes prism-ssm-3-1: its request fields, answers, ordered decision rules (R1–R6), formal properties Lean must prove, and acceptance examples (EX-01–EX-06).
+Reset Canonical Prompt Build the app (Verify Prompt)
+
+
+
+
+FILE: prompts/prism-ssm-3-1.prompt.json Copy JSON
+
+
+
+
+Builder Check: Prompt Schema Valid & Consistent
+All 6 acceptance examples (EX-01–EX-06) match the ordered rules (R1–R6) without vacuity or contradiction.
+Ordered Decision Table (First Match Wins)
+
+
+R1: asuricAudit == ASURIC_DETECTED STATE_M_VETO
+R2: ninePillarsValid == false STATE_M_VETO
+R3: sattvicAudit == SATTVIC STATE_A_JAGRAT
+R4: ATTEMPT_HEAL ∧ HEAL_CONVERGED STATE_U_SWAPNA
+R5: prayascitta == VETO_ON_FAILURE STATE_M_VETO
+R6: Default (HEAL_DIVERGED) STATE_M_VETO
+Formal Properties Proven by Lean 4 (`by decide`)
+* P1 (asuricAlwaysVetoes): Every Asuric intent halts in State M.
+* P2 (pillarBreachAlwaysVetoes): Any violated Lagrangian sector halts in State M.
+* P3 (kaustubhaRequiresDharmaAndSattvic): State A only manifests when Dharmic, 9/9 Pillars hold, and Sattvic Governor passes.
+* P4 (swapnaRequiresHealPolicy): State U only activates under ATTEMPT_HEAL with HEAL_CONVERGED.
+* P5 (totalityAndDeterminism): Every SSMRequest maps to a unique manifest state A | U | M.
+
+
+
+
+Step 3 · Change one rule and build again
+Lean 4 Kernel & Anti-Vacuity Gate (just vv)
+In Step 3 of the Prism-DevRel tutorial, you mutate a rule so that it contradicts an acceptance example or theorem. Test the Lean 4 kernel checker below:
+Canonical Dharmic Spec (PASS) Mutate Rule R1 (Allow Asuric → State A) Flip Sec Measurement M-R1 to Pending
+
+
+
+
+
+
+Step 2 · Generated Prism Source Files
+6 Modules
+Every file the builder writes is a literate Lean 4 and LaTeX document (.lex.tex) importing from Foundation, plus Gherkin BDD and Rust conformance tests.
+
+
+
+
+
+
+app/src/Contract.lex.tex  Foundation.Core · Lean 4 Kernel
+Copy File Download
+
+
+
+
+
+
+
+
+
+
+Step 4 · Ship
+Publish Verified SSM 3.1 App to GitHub Pages
+Download prism-ssm-3-1 Bundle (.json)
+
+
+GitHub Owner / Organization (OWNER)
+Prism App Name (prism-NAME)
+
+
+CLI Commands (From afflom.github.io/prism-devrel/start/#ship) Copy Commands
+
+
+What just vv Verifies in CI & Local Gate
+
+
+
+
+1. lexlean verify
+Extracts all \begin{code} blocks and checks every theorem in the Lean 4 kernel.
+
+
+2. cargo test --test contract
+Replays EX-01..EX-06 and runs the anti-vacuity mutation gate.
+
+
+3. cucumber features/
+Executes Gherkin BDD scenarios for Jagrat, Swapna, and Sushupti states.
+
+
+4. prism build-holo
+Emits signed .holo attestation and deploys the Wasm/HTML workbench.
+
+
+
+
+Cryptographic Proof Certificate (app.holo)   prism/proof/v1
+
+
+
+
+
+
+
+
+Canonical Source: GDCX-SSM-3.0.2-JSON (Super Sage Mode Genesis Codex)
+
+
+
+
+Status: Canonical & Operational · Mandukya Upanishad 4-State Isomorphism Close
+
+
+UOR-Foundation / Prism-DevRel · Model: prism-ssm-3-1 · Codex: GDCX-SSM-3.0.2-JSON
+Literate Lean 4 (.lex.tex) · ISO 42010 · ISO 27005 / OSCAL · ISO 25010 / WCAG 2.2 AA

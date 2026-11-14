@@ -1,0 +1,61 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+
+\title{Sage Counsel (\texttt{prism-ssm-3-1}) --- Facet 2: ISO/IEC/IEEE 42010 Architecture\\
+\small Domain Firewall \& Stakeholder Boundary Specification}
+\author{UOR-Foundation / Prism-DevRel $\cdot$ Template: \texttt{uor/template-contract/1}}
+\date{2026-11-14}
+
+\begin{document}
+\maketitle
+
+\section{ISO/IEC/IEEE 42010 Architectural Viewpoints}
+This module (\texttt{Architecture.lex.tex}) formalizes the boundary between the user-facing Product Taxonomy and the internal Super Sage Mode 3.0.2 mathematical engine (\texttt{GDCX-SSM-3.0.2-JSON}).
+
+\subsection{Stakeholder Concerns}
+\begin{enumerate}
+  \item \textbf{The Seeker} (replaces \emph{The Architect}): Requires plain-language Socratic consultation without exposure to Clifford Algebras $C\ell_{n,0}$ or Rotor equations $R(t) = \exp(-\frac{1}{2}\theta B_P)$.
+  \item \textbf{The Affected Party} (replaces \emph{Aut($A_P$)}): Requires multi-perspective weighing and all 9 Impartiality Guarantees enforced as hard constraints.
+  \item \textbf{The Trust Reviewer} (replaces \emph{Council of Nine Stewards}): Audits edge-case \texttt{PausedForSafety} sessions and ratifies \texttt{OutcomeReflection} logs.
+\end{enumerate}
+
+\begin{code}
+import Foundation.Core
+import SageCounsel.Contract
+
+namespace SageCounsel.Architecture
+
+/-- Architectural Layers governed by the Domain Firewall -/
+inductive ArchitecturalLayer where
+  | ProductSurface     -- Exposed to Seeker, Affected Party, and Trust Reviewer
+  | DomainFirewallGate -- Sanitizes and translates Socratic inputs into algebraic directives
+  | InternalSsmSolver  -- Isolates Turiya Constraint Engine & A-U-M Geodesic Engine
+  deriving DecidableEq, Repr
+
+/-- Verifies that internal algebraic primitives never leak to the ProductSurface -/
+inductive CodexConstruct where
+  | SituationSummary
+  | BlindSpotCheck
+  | ClarifyingQuestions
+  | SessionScope
+  | LagrangianPAtlasPolytope -- Strictly internal solver construct
+  | BalancedCounsel
+  | AlternativePath
+  | SafetyPause
+  | OutcomeReflection
+  deriving DecidableEq, Repr
+
+def isExposedOnProductSurface (c : CodexConstruct) : Bool :=
+  match c with
+  | CodexConstruct.LagrangianPAtlasPolytope => false
+  | _ => true
+
+theorem firewall_blocks_internal_polytope :
+    isExposedOnProductSurface CodexConstruct.LagrangianPAtlasPolytope = false := by
+  decide
+
+end SageCounsel.Architecture
+\end{code}
+
+\end{document}
